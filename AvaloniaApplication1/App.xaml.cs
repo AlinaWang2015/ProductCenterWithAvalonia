@@ -7,9 +7,9 @@ using Avalonia.Themes.Default;
 using Avalonia.Markup.Xaml;
 using Serilog;
 
-namespace Demo
+namespace AvaloniaApplication1
 {
-    public class App : Application
+    class App : Application
     {
 
         public override void Initialize()

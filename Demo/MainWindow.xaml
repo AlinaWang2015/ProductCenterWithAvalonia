@@ -1,3 +1,55 @@
-﻿<Window xmlns="https://github.com/avaloniaui" MinWidth="500" MinHeight="300">
-    <TextBlock>Hello world!</TextBlock> 
+﻿<Window xmlns="https://github.com/avaloniaui"  Width="800" Height="500">
+    <StackPanel Gap="4" Width="750" >
+      <StackPanel Orientation="Horizontal" Height="80">
+        <TextBlock Text="ThinkGeo Map Suite License Manager" FontWeight="Medium"
+                 FontSize="25" Foreground="#212121" Height="50" Width="600"/>
+        <TextBlock Text="login |" FontSize="15" FontWeight="Medium" Margin="9" />
+        <TextBlock Text="Help?" FontSize="15" FontWeight="Medium" Margin="9" />
+      </StackPanel>
+      
+      <Grid ColumnDefinitions="Auto,*,70,*" RowDefinitions="30,*,Auto,Auto" >
+        <TextBlock Text="Product:" FontSize="18" Grid.Row="0" Grid.Column="0"  />
+        <DropDown Grid.Row="0" Grid.Column="1" Width="100">
+          <DropDownItem Content="Map Suite Desktop" IsSelected="True"/>
+        </DropDown>
+
+        <TextBlock Text="Product:" FontSize="18" Grid.Row="0" Grid.Column="2"  />
+        <DropDown Grid.Row="0" Grid.Column="3" Width="100">
+          <DropDownItem Content="Map Suite Web"/>
+        </DropDown>
+        <Carousel Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2">
+          <Image Source="C:\Users\alinawang\documents\visual studio 2015\Projects\Demo\Demo\Capture.PNG" 
+                  />  
+        </Carousel>
+
+        <Carousel Grid.Row="1" Grid.Column="2"  Grid.ColumnSpan="2">
+          <Image Source="C:\Users\alinawang\documents\visual studio 2015\Projects\Demo\Demo\11.PNG"
+                  />
+        </Carousel>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        <TextBlock Text="      All features included except" FontSize="16" Grid.Row="2" Grid.ColumnSpan="2" />
+        <TextBlock Text="watermark 'Nodt Licensed' shown up" FontSize="16" Grid.Row="3" Grid.ColumnSpan="2" />
+        <Button  Content="Check" Grid.Column="2" Grid.Row="2"  />
+        <TextBlock Text="Check Activation History"  FontSize="16" Grid.Column="3"
+                 Grid.Row="2"  />
+      </Grid>
+
+
+
+
+      <StackPanel Orientation="Horizontal" Height="60">
+        <TextBlock Text=" License Manager (License Agreement)" 
+                 FontSize="12" Foreground="#212121" Height="50" Width="400"/>
+        <TextBlock Text="Copright@ 2015 ThinkGeo LLC All rights reserved " FontSize="12"   />
+      </StackPanel>
+    </StackPanel>
 </Window>
